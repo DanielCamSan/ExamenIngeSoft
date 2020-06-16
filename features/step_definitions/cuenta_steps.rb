@@ -5,8 +5,8 @@ Given('visito a la pagina de transacciones') do
   When('lleno en el campo {string} con {string}') do |campo, valor|
     fill_in(campo, :with => valor)
   end
-  When('presiono el boton de {string}') do |string|
-    pending
+  When('presiono el boton de {string}') do |boton|
+    click_link(boton)
   end
   
   Then('me deberia mostrar {string}') do |string|
