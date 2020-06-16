@@ -5,4 +5,10 @@ class Cuenta
     def getBalance()
         return @balance
     end
+    def depositar(numero=0)
+        @balance=@balance+numero
+    end
+    def retirar(numero=0)
+        @balance=@balance-numero
+    end
 end
